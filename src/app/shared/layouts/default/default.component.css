@@ -1,0 +1,73 @@
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100vh;
+        background-color: rgb(245, 245, 245);
+    }
+
+    .left-panel {
+        background-color:#3490dc;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+        padding-left: 7rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .welcome-text {
+        color: #ebf4fa;
+        font-size: 1.5rem;
+        font-weight: bold;
+        max-width: 100%; /* Ajusta el ancho máximo del h1 */
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        text-shadow: 5px 8px 12px blue ;
+    }
+
+    .sub-text {
+        max-width: 100%; /* Ajusta el ancho máximo del p */
+        color: #ffffff;
+        font-size: 1rem;
+        text-align: left; /* Centra horizontalmente */
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        text-shadow: 5px 8px 12px blue ;
+
+    }
+
+    .right-panel {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 80%;
+        height: 70%;
+        overflow: hidden;
+        border-radius: 0.5rem;
+    
+    }
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%; /* Intenta con diferentes valores, por ejemplo, 60% */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        width: 100%;
+    }
